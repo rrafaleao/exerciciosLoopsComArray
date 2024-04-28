@@ -20,6 +20,12 @@ int main(){
         if(array[3] > array[5]){
             cout << array[3] << endl;
         }
+        if(array[7] % 2 == 0){
+            cout << array[7] << endl;
+        }
+        if(array[3] + array[7] > 22){
+            cout << array[0] << endl;
+        }
         return false;
     }
 
