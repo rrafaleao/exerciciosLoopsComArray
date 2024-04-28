@@ -6,12 +6,21 @@ using namespace std;
 //Em seguida, crie um programa que utilize loops for para encontrar e imprimir o valor máximo e o valor mínimo do array.
 
 int main(){
-    int num[] = {0,1,2,3,4,5,6,7,8,9,10,11};
-    int soma = 0;
+    int num[] = {0,1,2,3,40,5,6,7,8,9,10,12};
+    int max = num[0];
+    int min = num[0];
+
     for(int i = 0; i < 12; i++){
-        soma > num[i];
-        cout << soma << endl;
-    }
+        if(num[i] > max){
+            max = num[i];
+        }
+
+        if(num[i] < min){
+            min = num[i];
+        }
+    }        
+    cout <<"O maior numero do array é: " << max << endl;
+    cout <<"O menor numero do array é: " << min << endl;
 
     return false;
 }
